@@ -23,11 +23,13 @@ newTaskBt.addEventListener('click', function (){
     document.body.appendChild(cancelBt);
 });
 
+/*
+//Gestionarlos después de crearlos. TODO
 document.getElementById('saveBt').addEventListener('click', function(){
     let task = new Task(document.getElementById('taskText').value);
     console.log(task)
 });
 
-/*cancelBt.addEventListener('click', function(){
+cancelBt.addEventListener('click', function(){
 
 });*/
