@@ -30,7 +30,7 @@ $(function () {
         if (texto !== ""){
             let taskDiv =$('<div id="taskDiv"></div>');
             $('#taskListUl').append(taskDiv);
-            let task =$('<button class="task">' + texto + ' </button>');
+            let task =$('<button class="task">' + texto + '</button>');
             taskDiv.append(task);
             taskList.push(texto);
             localStorage.setItem("taskList", JSON.stringify(taskList));
@@ -45,6 +45,7 @@ $(function () {
         $('#cancelBt').remove();
     });
 
+    //TODO - Cambiar por boton de eliminar
     $('body').on('click', '.task', function () { //Click eb el boton de guardar la nueva tarea
         let task = $(this).text();
         let idToDel = taskList.indexOf(task);
