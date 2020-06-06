@@ -2,13 +2,24 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src = "../Model/newTask.js"></script>
+        <link rel="stylesheet" href="../static/css/style.css">
+
         <title>Task List</title>
     </head>
     <body>
-        <div id = "newTaskDiv">
-            <button id ="newTaskBt">Añadir Tarea</button>
+        <h1>Lista de Tareas</h1>
+        <div id="firstRow">
+            <div id = "newTaskDiv">
+                <button class="buttonStyle" id ="newTaskBt">Añadir Tarea</button>
+            </div>
         </div>
+
+        <ul id="taskListDiv">
+            
+        </ul>
+
         
     </body>
 </html>

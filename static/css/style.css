@@ -1,0 +1,50 @@
+#taskListDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 60px;
+}
+
+.task{
+    width: 50%;
+    max-width: 500px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: large;
+    margin: 3px;
+    border-radius: 3px;
+    background-color: rgb(172, 255, 255);
+}
+
+.buttonStyle{
+    border-radius: 5px;
+    font-size: larger;
+    font-family: arial;
+}
+
+#taskText{
+    font-family: arial; 
+    height: 100%;
+}
+
+#firstRow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+
