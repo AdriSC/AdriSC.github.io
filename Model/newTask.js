@@ -2,26 +2,28 @@ function Task(description){
     this.description = description;
 }
 
-const newTaskBt = document.getElementById('newTaskBt');
+window.onload = function(){
+    const newTaskBt = document.getElementById('newTaskBt');
+    const newTaskDiv = document.getElementById('newTaskDiv')
+    console.log(newTaskBt);
 
-console.log(newTaskBt);
+    newTaskBt.addEventListener('click', function (){
+        newTaskBt.disabled = true;
+        const taskText = document.createElement('input');
+        taskText.setAttribute('id', 'taskText');
+        newTaskDiv.appendChild(taskText);
 
-newTaskBt.addEventListener('click', function (){
-    newTaskBt.disabled = true;
-    const taskText = document.createElement('input');
-    taskText.setAttribute('id', 'taskText');
-    document.body.appendChild(taskText);
+        const saveBt = document.createElement('button');
+        saveBt.setAttribute('id', 'saveBt');
+        saveBt.innerHTML = 'Guardar';
+        newTaskDiv.appendChild(saveBt);
 
-    const saveBt = document.createElement('button');
-    saveBt.setAttribute('id', 'saveBt');
-    saveBt.innerHTML = 'Guardar';
-    document.body.appendChild(saveBt);
-
-    const cancelBt = document.createElement('button');
-    cancelBt.setAttribute('id', 'cancelBt');
-    cancelBt.innerHTML = 'Cancelar';
-    document.body.appendChild(cancelBt);
-});
+        const cancelBt = document.createElement('button');
+        cancelBt.setAttribute('id', 'cancelBt');
+        cancelBt.innerHTML = 'Cancelar';
+        newTaskDiv.appendChild(cancelBt);
+    });    
+}
 
 /*
 //Gestionarlos después de crearlos. TODO
