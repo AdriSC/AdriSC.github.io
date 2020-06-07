@@ -6,5 +6,5 @@ console.log(`Workbox ${workbox ? 'sí' : 'no'} está funcionando`);
 
 workbox.precaching.precacheAndRoute([
   {url: '/index.html', revision: null },
-  {url: '/app.js', revision: null},
+  {url: '/js/app.js', revision: null},
 ]);

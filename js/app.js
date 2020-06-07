@@ -2,12 +2,8 @@
 //Registrar SW, sacado de los apuntes
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/js/sw.js').then(reg => {
-            console.log('Todo bien:', reg)
-        }, function (err) {
-            console.log('Fallo:', err)
-        })
-    })
+        navigator.serviceWorker.register('/js/sw.js');
+    });
 }
 
 $(function () {
@@ -26,7 +22,7 @@ $(function () {
             taskDiv.append(task);
         }
     }
-
+    
     //Botón para Añadir Tarea
     $('#newTaskBt').on('click', () => {
         //Se deshabilita el botón
