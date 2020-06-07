@@ -1,14 +1,14 @@
-$(function () {
-
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('sw.js').then(reg => {
-                console.log('SW ok', reg)
-            }, function (err) {
-                console.log('Fallo SW', err)
-            })
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').then(reg => {
+            console.log('SW ok', reg)
+        }, function (err) {
+            console.log('Fallo SW', err)
         })
-    }
+    })
+}
+
+$(function () {
 
     let taskList = []; // Array de Strings con las tareas
 
