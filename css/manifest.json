@@ -3,7 +3,7 @@
   "name": "Task List: List your tasks",
   "description": "A PWA which allows you to list your tasks",
   "icons": [ ],
-  "start_url": "/",
+  "start_url": "https://adrisc.github.io/taskList/",
   "background_color": "#26AF31",
   "display": "standalone",
   "scope": "/"
