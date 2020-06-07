@@ -18,7 +18,8 @@ h1{
 }
 
 .task{
-    width: 50%;
+    width: 100%;
+    margin: auto;
     max-width: 500px;
     padding-left: 15px;
     padding-right: 15px;
@@ -46,5 +47,20 @@ h1{
     width: 100%;
 }
 
+#taskListUl{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+}
+
+#taskDiv{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+}
 
 
