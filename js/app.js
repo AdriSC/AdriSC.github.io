@@ -1,4 +1,15 @@
 $(function () {
+
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('sw.js').then(reg => {
+                console.log('SW ok', reg)
+            }, function (err) {
+                console.log('Fallo SW', err)
+            })
+        })
+    }
+
     let taskList = []; // Array de Strings con las tareas
 
     //const newTaskBt = document.getElementById('newTaskBt');
@@ -23,8 +34,8 @@ $(function () {
     $('#newTaskBt').on('click', () => {
         $('#newTaskBt').prop('disabled', true);
         let taskText = $('<input required type="text" id="taskText"></input>');
-        let saveBt = $('<button id="saveBt"></button>').text('Guardar');
-        let cancelBt = $('<button id="cancelBt"></button>').text('Cancelar');
+        let saveBt = $('<button class="buttonStyle" id="saveBt"></button>').text('Guardar');
+        let cancelBt = $('<button class="buttonStyle" id="cancelBt"></button>').text('Cancelar');
         $('#newTaskDiv').append(taskText, saveBt, cancelBt);
     });
 
@@ -66,10 +77,10 @@ $(function () {
         taskTextEdit.val(initText);
         $(':button').prop('disabled', true); // Desactiva los botones de la pagina
 
-        let deleteBt = $('<button class="cancel" id="deleteButton"></button>').text('Eliminar');
-        let cancelBt = $('<button class="cancel" id="cancelBtEdit"></button>').text('Cancelar');
-        let saveBt = $('<button id="saveBtEdit"></button>').text('Guardar');
-        let div = $('<div></div>');
+        let deleteBt = $('<button class="buttonStyle" id="deleteButton"></button>').text('Eliminar');
+        let cancelBt = $('<button class="buttonStyle" id="cancelBtEdit"></button>').text('Cancelar');
+        let saveBt = $('<button class="buttonStyle" id="saveBtEdit"></button>').text('Guardar');
+        let div = $('<div id="options"></div>');
         div.append(deleteBt, cancelBt, saveBt);
         $('#editBox').append(taskTextEdit, div);
     });
