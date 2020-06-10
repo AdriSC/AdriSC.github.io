@@ -6,8 +6,5 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox
 
 workbox.precaching.precacheAndRoute([
   {url: '/index.html', revision: null },
-  {url: '/manifest.json', revision: null },
   {url: '/js/app.js', revision: null},
-  {url: '/js/sw.js', revision: null},
-  {url: '/css/style.css', revision: null },
 ]);
