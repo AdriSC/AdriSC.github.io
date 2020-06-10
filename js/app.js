@@ -2,7 +2,7 @@
 //Registrar SW, sacado de los apuntes
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/js/sw.js');
+        navigator.serviceWorker.register('sw.js');
     });
 }
 
