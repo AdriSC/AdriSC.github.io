@@ -2,7 +2,18 @@
   "short_name": "Task List",
   "name": "Task List: List your tasks",
   "description": "A PWA which allows you to list your tasks",
-  "icons": [ ],
+  "icons": [ 
+    {
+    "src": "/images/192icon.jpg",
+    "type": "image/jpg",
+    "sizes": "192x192"
+    },
+    {
+    "src": "/images/512icon.png",
+    "type": "image/png",
+    "sizes": "512x512"
+    }
+  ],
   "start_url": "https://adrisc.github.io/",
   "background_color": "#26AF31",
   "display": "standalone",
