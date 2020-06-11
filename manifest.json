@@ -17,6 +17,7 @@
   "start_url": "https://adrisc.github.io/",
   "background_color": "#26AF31",
   "display": "standalone",
-  "scope": "/"
+  "scope": "/",
+  "theme_color": "#710f8c"
 }
 

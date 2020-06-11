@@ -1,5 +1,5 @@
 
-//Registrar SW, sacado de los apuntes
+//Registrar SW (De los apuntes de la asignatura)
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
         navigator.serviceWorker.register('../sw.js');
